@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Producer Consumer</title>
+        <title>Reader writer</title>
 
 
 
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
         <script type="text/javascript" src="lru.js"></script>
+        <style>
+          body{
+            background-color: #e7c1ed;
+          }
+        </style>
 
     </head>
     <body>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4f2355">
           <a class="navbar-brand" href="../Index/index.html#psync">Home</a>
           <a class="navbar-brand " href="reader_writer.html">Simulation</a>
 
@@ -24,17 +29,12 @@
         <br>
         <div class="container">
 
-                    <h1 class="display-3">Reader Writer Problem</h1>
-                         <hr class="my-4">
-                    <p>The readers-writers problem relates to an object such as a file that is shared between multiple processes. Some of these processes are readers i.e. they only want to read the data from the object and some of the processes are writers i.e. they want to write into the object.</p>
-                              <p>The readers-writers problem is used to manage synchronization so that there are no problems with the object data. For example - If two readers access the object at the same time there is no problem. However if two writers or a reader and writer access the object at the same time, there may be problems.</p>
+          <h1 class="display-4" style="color: #135ea9;">Reader Writer Problem</h1>
+                         <hr class="my-4"><br><br><br><br>
+                         <p style="color: #892596; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 25px;">The reader-writer problem is a classic synchronization problem in computer science. It involves coordinating the access to a shared resource between multiple readers and writers.
 
-          <hr class="my-4">
+                      In this problem, there is a shared resource (e.g., a data structure, a file, a database) that can be accessed by multiple processes or threads. The goal is to ensure that concurrent access to the shared resource by readers and writers does not result in data inconsistencies or conflicts.</p>
+                      <p style="color: #892596; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 25px;">The reader-writer problem poses the challenge of allowing multiple readers to access the shared resource concurrently while ensuring that writers have exclusive access. If a writer is currently writing to the resource, no other readers or writers should be allowed access until the writer has finished.</p>
 
-
-                       <hr class="my-4">
-
-              <img src="includes/reader_writer_items/rw_algo.png" alt="ALGORITHM">
-              <br><br><br><br><br>
 	</body>
 </html>

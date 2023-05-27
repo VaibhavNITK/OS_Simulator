@@ -7,11 +7,17 @@
 
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
         <script type="text/javascript" src="lru.js"></script>
+        <style>
+          body{
+            background-color: #e7c1ed;
+          }
+        </style>
 
     </head>
+    
     <body>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4f2355">
           <a class="navbar-brand" href="../Index/index.html#psync">Home</a>
           <a class="navbar-brand " href="producer_consumer.html">Simulation</a>
 
@@ -22,20 +28,34 @@
 
         </nav>
         <br>
+        
         <div class="container">
 
-                    <h1 class="display-3">Producer Consumer Problem</h1>
+                    <h1 class="display-4" style="color: #135ea9;">Producer Consumer Problem</h1>
                          <hr class="my-4">
-                    <p>Producer consumer problem is also known as bounded buffer problem. In this problem we have two processes, producer and consumer, who share a fixed size buffer. Producer work is to produce data or items and put in buffer. Consumer work is to remove data from buffer and consume it. We have to make sure that producer do not produce data when buffer is full and consumer do not remove data when buffer is empty.</p>
-                              <p>The producer should go to sleep when buffer is full. Next time when consumer removes data it notifies the producer and producer starts producing data again. The consumer should go to sleep when buffer is empty. Next time when producer add data it notifies the consumer and consumer starts consuming data. This solution can be achieved using semaphores.</p>
+                    <p style="color: #892596; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 25px;">The producer-consumer problem is a classic synchronization problem in computer science and operating systems. It involves coordinating the actions of two different types of processes or threads: producers and consumers. The goal is to ensure that producers can safely and efficiently produce items, and consumers can consume those items without conflicts or inconsistencies.
 
-          <hr class="my-4">
+                    In this problem, there are one or more producer processes/threads that generate data items, and one or more consumer processes/threads that consume those items. There is typically a shared buffer or queue that serves as the intermediate storage for the produced items until they are consumed.<br><br></p><p style="color:#135ea9;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 25px;">
+                  
+                    ALGORITHM<br><br>
 
+                    Step 1: Start<br>
+                    
+                    Step 2: Define the maximum buffer size.<br>
+                    
+                    Step 3:Enter the number of producers and consumers. <br>
+                    
+                    Step 4: The producer produces the job and put it in the buffer. <br>
+                    
+                    Step 5:The consumer takes the job from the buffer.<br>
+                    
+                    Step 6:If the buffer is full the producer goes to sleep.<br>
 
-                       <hr class="my-4">
+                    Step 7:If the buffer is empty then consumer goes to sleep.<br>
+                    
+                    Step 8:Stop<br></p>
 
-              <img src="includes/producer_consumer_items/algo.png" alt="ALGORITHM">
-              <<img src="includes/producer_consumer_items/pc.png" alt="Producer">
+              <img src="https://www.scaler.com/topics/images/producer-consumer-problem-in-java-thumbnail.webp" alt="Producer" width="550px" height="500px" style="margin-left:300px">
               <br><br><br><br><br>
 	</body>
 </html>
