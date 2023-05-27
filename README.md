@@ -30,18 +30,18 @@ The password for the login screen is "OSsimulator".
 
 ### Team
 
-1. **Harshitha P (181CO121)**
-
-2. **Irfan Backer Iqbal Valappil (181CO122)**
-
-3. **Jemesh Khatik (181CO124)**
-
-4. **K Krishan Swaroop (181CO125)**
-
-5. **Kesana Jahnavi (181CO127)**
-
-6. **Kiran Babu Sangireddi (181CO128)**
-
-7. **Kshitij Raj (181CO129)**
-
-8. **Lade Akhilesh (181CO130)**
+1. Tejas Gowda
+2. Vaibhav Agrawal
+3. Vaishali D S
+4. Yojana Mallik
+5. Samar Sodhi
+6. Vidit Harin Shah
+7. Y Supradha Bhat
+8. Violina Doley
+9. Umika Saroha
+10. Vinay H
+11. Yash Manoj Goyal
+12. Abhinav R
+13. Sushant Kumar
+14. Tejaswini B S
+15. Thaker Harsh Linesh
