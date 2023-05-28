@@ -23,6 +23,7 @@
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#psync">Process synchronization</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#bankers">Banker's algorithm</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#memmanage">Memory management</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#mft">MFT/MVT</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#pagerepl">Page replacement</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#diskschedule">Disk scheduling</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#filealloc">File allocation</a></li>
@@ -44,6 +45,7 @@
                     <li>Process synchronization</li>
                     <li>Banker's algorithm</li>
                     <li>Memory management</li>
+                    <li>MFT/MVT</li>
                     <li>Page replacement</li>
                     <li>Disk scheduling</li>
                     <li>File allocation</li>
@@ -179,10 +181,40 @@
 		<div class="subheading mb-2">Demo:
               </div>
 		<div class="row">
-		<a class="btn btn-outline-primary col-md-4" href="../MFT/index.html">Memory Management</a>
+		<a class="btn btn-outline-primary col-md-4" href="../MemoryManagement/memory_fit_home.html">Memory Management</a>
           </div>
         </div>
     </section>
+    
+    <section id="mft" class="cta" style="background-color: rgb(152, 88, 29);height: 965px;">
+      <div class="container">
+        <h2 class="mb-5">MFT/MVT</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row">
+          <div class="resume-content mr-auto">
+
+            <p>Memory Management involves managing and allocating memory resources in an operating system. Two common techniques used for this purpose are MFT (Multiple Fixed-Size Partitioning) and MVT (Multiple Variable-Size Partitioning).
+
+              MFT divides the main memory into fixed-sized partitions, where the operating system resides in the first partition and user processes are allocated contiguous blocks of memory within these partitions. However, MFT suffers from internal fragmentation as processes must fit precisely into a partition, leading to wasted memory.
+              
+              In contrast, MVT dynamically creates partitions of variable sizes based on process requirements, minimizing internal fragmentation. However, MVT can be prone to external fragmentation, where scattered free memory blocks make it challenging to allocate larger contiguous processes.
+            </p>
+
+
+  <div class="subheading mb-2"><font color="black">Following Problems are demonstrated in the simulator :
+            </font>
+          </div>
+  <p>
+  MFT/MVT<br>
+  </p>
+  <div class="subheading mb-2">Demo:
+            </div>
+  <div class="row">
+  <a class="btn btn-outline-primary col-md-4" href="../MFT_MVT/mftmvt.html">MFT/MVT</a>
+        </div>
+      </div>
+  </section>
+
     <section id="pagerepl" class="cta"style="background-color: rgba(42, 98, 134, 1);height: 965px;">
         <div class="container">
           <font color='white'>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>OS Simulator</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <style>
+        /* Custom styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        #main {
+            padding: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .section-title h3 {
+            font-size: 24px;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .section-title p {
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .col-lg-6 {
+            flex-basis: 50%;
+            max-width: 50%;
+        }
+
+        .content h3 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .content ul {
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Other existing styles */
+        /* ... */
+    </style>
+
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header">
+        <div class="container">
+            <h1 class="logo">OS Simulator<span>.</span></h1>
+            <div class="button-container">
+                <button><a href="../Index/index.html">Home</a></button>
+            </div>
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+        <!-- ======= About Section ======= -->
+        <section id="about">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About topic</h2>
+                    <h3>Know <span>About topic</span></h3>
+                    <p>Memory Fit Algorithms</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="first_fit.jpeg" width="370" class="img-fluid" alt="">
+                        <p style="margin-left: 150px;">First Fit</p>
+                        <button><a href="memory_first_fit.html">Simulate First Fit</a></button>
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0 content">
+                        <h3>First Fit</h3>
+                        <ul>
+                            <li>
+                                This method keeps the free/busy list of memory partitions in ascending order of memory addresses.
+                            </li>
+                            <li>
+                                It searches for the first free partition that is large enough to accommodate the job.
+                            </li>
+                        </ul>
+                        <button><a href="#">Learn More</a></button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 order-2 order-lg-1">
+                        <img src="best_fit.jpg" width="370" class="img-fluid" alt="">
+                        <p style="margin-left: 150px;">Best Fit</p>
+                        <button><a href="memory_best_fit.html">Simulate Best Fit</a></button>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 content">
+                        <h3>Best Fit</h3>
+                        <ul>
+                            <li>
+                                This method searches the entire list of free memory partitions and selects the one that is closest in size to the job.
+                            </li>
+                            <li>
+                                It optimizes memory utilization but requires more time for searching the best-fit partition.
+                            </li>
+                        </ul>
+                        <button><a href="#">Learn More</a></button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="worst_fit.jpeg" width="370" class="img-fluid" alt="">
+                        <p style="margin-left: 150px;">Worst Fit</p>
+                        <button><a href="memory_worst_fit.html">Simulate Worst Fit</a></button>
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0 content">
+                        <h3>Worst Fit</h3>
+                        <ul>
+                            <li>
+                                This method selects the largest available memory partition that can accommodate the job.
+                            </li>
+                            <li>
+                                It creates large empty spaces and is useful for reducing fragmentation but may lead to poor memory utilization.
+                            </li>
+                        </ul>
+                        <button><a href="#">Learn More</a></button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="next_fit.png" width="370" class="img-fluid" alt="">
+                        <p style="margin-left: 150px;">Next Fit</p>
+                        <button><a href="memory_next_fit.html">Simulate Next Fit</a></button>
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0 content">
+                        <h3>Next Fit</h3>
+                        <ul>
+                            <li>
+                                This method starts searching for free partitions from the last allocated partition and wraps around to the beginning of the list.
+                            </li>
+                            <li>
+                                It reduces external fragmentation and is suitable for scenarios with jobs of varying sizes.
+                            </li>
+                        </ul>
+                        <button><a href="#">Learn More</a></button>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End About Section -->
+        
+        <!-- Other sections and content... -->
+        <!-- ... -->
+        
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container">
+            <!-- ... -->
+        </div>
+    </footer><!-- End Footer -->
+
+    <!-- Scripts -->
+    <!-- ... -->
+</body>
+
+</html>

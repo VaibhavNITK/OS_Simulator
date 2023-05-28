@@ -1,0 +1,191 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>OS Simulator</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <style>
+        /* Custom styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        #main {
+            padding: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .section-title h3 {
+            font-size: 24px;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .section-title p {
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .col-lg-6 {
+            flex-basis: 50%;
+            max-width: 50%;
+        }
+
+        .content h3 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .content ul {
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Other existing styles */
+        /* ... */
+    </style>
+
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header">
+        <div class="container">
+            <h1 class="logo">OS Simulator<span>.</span></h1>
+            <div class="button-container">
+                <button><a href="../Index/index.html">Home</a></button>
+            </div>
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+        <!-- ======= About Section ======= -->
+        <section id="about">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About topic</h2>
+                    <h3>Know <span>About topic</span></h3>
+                    <p>Memory Management</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="mft.png" width="370" class="img-fluid" alt="">
+                        <p style="margin-left: 150px;">MFT</p>
+                        <button><a href="mft.html">Simulate MFT</a></button>
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0 content">
+                        <h3>MFT</h3>
+                        <ul>
+                            <li>
+                                MFT is a memory management technique where the main memory is divided into fixed-size partitions. Each partition has a predefined size and cannot be changed dynamically. The operating system typically resides in the first partition, while the remaining partitions are allocated to user processes.
+                            </li>
+                            <li>
+                                In MFT, memory allocation is done in a contiguous manner. Each process is assigned a partition that provides a continuous block of memory. The size of the partition is determined based on the memory requirements of the process. The allocated memory must be contiguous, meaning it must be located in a single partition without any gaps or fragmentation.
+                            </li>
+                        </ul>
+                        <button><a href="https://en.wikipedia.org/wiki/Memory_management_(operating_systems)">Learn More</a></button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 order-2 order-lg-1">
+                        <img src="mvt.png" width="370" class="img-fluid" alt="">
+                        <p style="margin-left: 150px;">MVT</p>
+                        <button><a href="mvt.html">Simulate MVT</a></button>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 content">
+                        <h3>MVT</h3>
+                        <ul>
+                            <li>
+                                MVT is a memory management technique where the main memory is divided into variable-sized partitions. Unlike fixed partitioning, the size of each partition is not predefined and can vary based on the memory requirements of the processes being loaded into memory. This allows for more efficient memory utilization by allocating memory based on the actual size of the processes.
+                            </li>
+                            <li>
+                                In MVT, partitions are created dynamically as processes are loaded into memory. Each process is allocated a partition that matches its size. This flexibility eliminates the issue of internal fragmentation, as partitions are tailored to fit the exact memory needs of the processes.
+                            </li>
+                        </ul>
+                        <button><a href="https://en.wikipedia.org/wiki/Memory_management_(operating_systems)">Learn More</a></button>
+                    </div>
+                </div>
+
+                
+
+                
+            </div>
+        </section><!-- End About Section -->
+        
+        <!-- Other sections and content... -->
+        <!-- ... -->
+        
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container">
+            <!-- ... -->
+        </div>
+    </footer><!-- End Footer -->
+
+    <!-- Scripts -->
+    <!-- ... -->
+</body>
+
+</html>
