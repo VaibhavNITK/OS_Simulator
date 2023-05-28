@@ -14,7 +14,60 @@
 </head>
 
 <body id="page-top">
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav" style="background-color: rgba(186, 186, 186, 0.49);opacity: 1;">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#page-top" style="color: rgb(22, 212, 51);">OS Simulator</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#pschedule">Process Scheduling</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#psync">Process Synchronization</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#bankers">Banker's Algorithm</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#memmanage">Memory Management</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mft">MFT/ MVT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pagerepl">Page Replacement</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#diskschedule">Disk Scheduling</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#filealloc">File Allocation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#filemanage">File Management</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <style>
+    .navbar-nav .nav-link {
+      border-radius: 5px;
+      border: 1px solid transparent;
+      transition: all 0.3s ease;
+    }
+  
+    .navbar-nav .nav-link:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+  </style>
+  
+    <!-- <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav" style="background-color: rgba(186, 186, 186, 0.49);opacity: 1;">
         <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">OS Simulator</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler float-right" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div
                 class="collapse navbar-collapse" id="navbarResponsive">
@@ -31,14 +84,79 @@
                 </ul>
         </div>
         </div>
-    </nav>
-    <section id="page-top" style="background-image: url(&quot;assets/img/bg-pattern.png&quot;);background-color: #457cb0;height: 1072.76px;">
-      <div class="container" style="color: rgb(255,255,255);">
+    </nav> -->
+    
+    <section id="page-top" style="background-image: url('assets/img/bg.png'); background-color: #457cb0; height: 1072.76px;">
+      <div class="container" style="color: rgb(255, 255, 255);">
         <!-- Start: 1 Row 2 Columns -->
+        <div>
+          <div class="container">
+            <div class="row">
+              <h2><br><b>OPERATING SYSTEM SIMULATOR</b><br><br></h2>
+              <div class="col-md-6" style="font-size: 22px;">
+                <b style="font-size: 25px;">Concepts demonstrated</b><br>
+                <ul>
+                  <li>Process scheduling</li>
+                  <li>Process synchronization</li>
+                  <li>Banker's algorithm</li>
+                  <li>Memory management</li>
+                  <li>MFT/MVT</li>
+                  <li>Page replacement</li>
+                  <li>Disk scheduling</li>
+                  <li>File allocation</li>
+                  <li>File management</li>
+                </ul>
+              </div>
+              <div class="col-md-6" style="font-size: 22px;">
+                <b style="font-size: 25px;">Team Members</b><br>
+                <ul style="padding-left: 20px;">
+                  <li>Tejas Gowda (201CS163, S1)</li>
+                  <li>Umika Saroha (211CS161, S1)</li>
+                  <li>Vaibhav Agrawal (211CS162, S1)</li>
+                  <li>Vaishali D S (211CS163, S1)</li>
+                  <li>Vinay H (211CS164, S1)</li>
+                  <li>Yash Manoj Goyal (211CS165, S1)</li>
+                  <li>Yojana Mallik (211CS166, S1)</li>
+                  <li>Samar Sodhi (211CS167, S1)</li>
+                  <li>Abhinav R (201CS201, S2)</li>
+                  <li>Sushant Kumar (211CS261, S2)</li>
+                  <li>Tejaswini B S (211CS262, S2)</li>
+                  <li>Thaker Harsh Linesh (211CS263, S2)</li>
+                  <li>Vidit Harin Shah (211CS264, S2)</li>
+                  <li>Y Supradha Bhat (211CS265, S2)</li>
+                  <li>Violina Doley (211CS266, S2)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End: 1 Row 2 Columns -->
+      </div>
+    </section>
+    
+    
+    <style>
+      .col-md-6 {
+        border-radius: 5px;
+        border: 1px solid transparent;
+        font-size: 22px;
+        padding: 20px;
+        transition: all 0.3s ease;
+      }
+    
+      .col-md-6:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+        border-color: rgba(255, 255, 255, 0.5);
+      }
+    </style>
+    
+    <!-- <section id="page-top" style="background-image: url('assets/img/bg.png');background-color: #457cb0;height: 1072.76px;">
+      <div class="container" style="color: rgb(255,255,255);">
+        Start: 1 Row 2 Columns
         <div>
             <div class="container">
                 <div class="row">
-                  <h2 style="color: rgb(255,255,23);text-shadow: 2px 2px #000fff;"></br><b>Operating System Simulator</b></br></br></h2>
+                  <h2 style="color: rgb(255,255,23);text-shadow: 2px 2px #000fff;"></br><b>OPERATING SYSTEM SIMULATOR </b></br></br></h2>
                   <div class="col-md-6" style="font-size: 22px;">
                     <b style="font-size: 25px;">Concepts demonstrated</b></br>
                     <li>Process scheduling</li>
@@ -72,9 +190,8 @@
                 </div>
             </div>
         </div>
-        <!-- End: 1 Row 2 Columns -->
       </div>
-    </section>
+    </section> -->
 
     <section id="pschedule" class="features" style="background-color: #000000;height: 965px;">
         <div class="container" style="color: rgb(255,255,255);">
@@ -97,14 +214,14 @@
                 <div class="subheading mb-2">Demo:
                 </div>
       <div class="row">
-      <a href="../Process Scheduling/src/sjf.html" style='color:yellow' class="btn btn-outline-primary col-md-3">Shortest Job First</a>&emsp;
-                <a href="../Process Scheduling/src/fcfs.html" style='color:yellow' class="btn btn-outline-primary col-md-3">First Come First Served</a>&emsp;
-                <a href="../Process Scheduling/src/rr.html" style='color:yellow' class="btn btn-outline-primary col-md-3">Round Robin</a>
+      <a href="../Process Scheduling/src/sjf.html" style='color:yellow' class="btn btn-success">Shortest Job First</a>&emsp;
+                <a href="../Process Scheduling/src/fcfs.html" style='color:yellow' class="btn btn-success">First Come First Served</a>&emsp;
+                <a href="../Process Scheduling/src/rr.html" style='color:yellow' class="btn btn-success">Round Robin</a>
               </div>
               <br>
           <div class="row">
-          <a class="btn btn-outline-primary col-md-3" style='color:yellow' href="../Process Scheduling/src/priority.html">Priority Scheduling</a>&emsp;
-      <a class="btn btn-outline-primary col-md-4" style='color:yellow' href="../Process Scheduling/src/srtf.html">Shortest Remaining Time First</a>
+          <a class="btn btn-success" style='color:yellow' href="../Process Scheduling/src/priority.html">Priority Scheduling</a>&emsp;
+      <a class="btn btn-success" style='color:yellow' href="../Process Scheduling/src/srtf.html">Shortest Remaining Time First</a>
     </div>
       </div>
               </div>
@@ -132,14 +249,14 @@
                 <div class="subheading mb-2">Demo:
                 </div>
                 <div class="row">
-                <a class="btn btn-outline-primary col-md-4" href="../Process Synchronization/pc_wiki.html">Producer Consumer Problem</a>
-                <a class="btn btn-outline-primary col-md-4" href="../Process Synchronization/rw_wiki.html">Reader Writer Problem</a>
-                <a class="btn btn-outline-primary col-md-4" href="../Process Synchronization/dining_wiki.html">Dining Philosopher Problem</a>
+                <a class="btn btn-success" href="../Process Synchronization/pc_wiki.html">Producer Consumer Problem</a>
+                <a class="btn btn-success" href="../Process Synchronization/rw_wiki.html">Reader Writer Problem</a>
+                <a class="btn btn-success" href="../Process Synchronization/dining_wiki.html">Dining Philosopher Problem</a>
               </div>
               <br>
               <div class="row">
-                <a class="btn btn-outline-primary col-md-4" href="../Process Synchronization/cigarette_smokers.html">Cigarette Smokers Problem</a>&emsp;
-                <a class="btn btn-outline-primary col-md-4" href="../Process Synchronization/sb_wiki.html">Sleeping Barber Problem</a>
+                <a class="btn btn-success" href="../Process Synchronization/cigarette_smokers.html">Cigarette Smokers Problem</a>&emsp;
+                <a class="btn btn-success" href="../Process Synchronization/sb_wiki.html">Sleeping Barber Problem</a>
               </div>
               </div>
             </div>
@@ -155,7 +272,7 @@
               <div class="subheading mb-2">Demo:
               </div>
               <div class="row">
-              <a class="btn btn-outline-primary col-md-3" href="../Bankers/banker.html">Banker's algorithm</a>
+              <a class="btn btn-success" href="../Bankers/banker.html">Banker's algorithm</a>
               </div>
         </div>
         </div>
@@ -181,7 +298,7 @@
 		<div class="subheading mb-2">Demo:
               </div>
 		<div class="row">
-		<a class="btn btn-outline-primary col-md-4" href="../MemoryManagement/memory_fit_home.html">Memory Management</a>
+		<a class="btn btn-success" href="../MemoryManagement/memory_fit_home.html">Memory Management</a>
           </div>
         </div>
     </section>
@@ -210,7 +327,7 @@
   <div class="subheading mb-2">Demo:
             </div>
   <div class="row">
-  <a class="btn btn-outline-primary col-md-4" href="../MFT_MVT/mftmvt.html">MFT/MVT</a>
+  <a class="btn btn-success" href="../MFT_MVT/mftmvt.html">MFT/MVT</a>
         </div>
       </div>
   </section>
@@ -239,13 +356,13 @@
               <div class="subheading mb-2">Demo:
               </div>
               <div class="row">
-              <a class="btn btn-outline-primary col-md-4" href="../page replacement/lruindex.html">Page Replacement</a>
+              <a class="btn btn-success" href="../page replacement/lruindex.html">Page Replacement</a>
                </div>
 
 		    <div class="subheading mb-2">wiki:
 
                   <div class="row">
-                    <a class="btn btn-outline-primary col-md-4" href="../page replacement/wiki.html">wiki</a></button>
+                    <a class="btn btn-success" href="../page replacement/wiki.html">wiki</a></button>
                 </div>
                 </font>
            </div>
@@ -268,7 +385,7 @@
 
               </div>
               <div class="row">
-              <a class="btn btn-outline-primary col-md-4" href="../Disk/disk.html">Disk Scheduling Algorithms</a>
+              <a class="btn btn-success" href="../Disk/disk.html">Disk Scheduling Algorithms</a>
           </div>
 
         </div>
@@ -276,7 +393,7 @@
         </div>
       </font>
     </section>
-    <section id="filealloc" class="cta" style="height: 965px;background-color: rgba(255,255,255,0.5);">
+    <section id="filealloc" class="cta" style="height: 965px;background-color: #7B1FA2;">
         <div class="container">
           <div class="my-auto">
             <h2 class="mb-5">File Allocation Techniques</h2>
@@ -303,45 +420,65 @@
           </div>
         </div>
     </section>
-    <section id="filemanage" class="cta" style="background-color: rgb(249,221,22);height: 965px;">
+    <!-- <section id="filemanage" class="cta" style="background-color: #a200e0;height: 965px;"> -->
+    <section id="filemanage" class="cta" style="background-color: #a200e0;height: 965px; background-image: url('assets/img/bg.png');">
         <div class="container">
-          <font color='black'>
+          <font color='white'>
           <div class="my-auto">
             <h2 class="mb-5">File Management</h2>
             <div class="resume-item d-flex flex-column flex-md-row">
               <div class="resume-content mr-auto">
 
                 <p> File System represents data from a logical point of view. The different directory structures for the file systems are:
-                  <br>
-                • Single-Level Structured Directory
-                <br>
-                • Two-Level Structured Directory
-                <br>
-                • Tree Structured Directory
-                <br>
+                  <br> <br>
+                •&emsp;Single-Level Structured Directory
+                <br> <br>
+                •&emsp;Two-Level Structured Directory
+                <br> <br>
+                •&emsp;Tree Structured Directory
+                <br> <br>
                 </p>
               <!-- add info about the wiki -->
-              <p>Some more details here</p>
-              <p class="lead">
+              <!-- <p class="lead">
                 <a class="btn btn-success" href="https://en.wikipedia.org/wiki/File_system" role="button">Wiki</a>
-              </p>
+              </p> -->
               </div>
 
             </div>
           </div>
-           <div class="subheading mb-2">Demo:</div>
-              <div class="row">
-              <a class="btn btn-secondary col-md-5" href="../File_System/single_level_directory.html">Single-Level Structured Directory</a>&emsp;
-              <a class="btn btn-secondary col-md-4" href="../File_System/two_level_directory.html">Two-Level Structured Directory</a>
-          </div>
-        </br>
-          <div class="row">
-               <a class="btn btn-secondary col-md-4" href="../File_System/tree_directory.html">Tree Structured Directory</a>
+            <div class="row">
+              <a class="btn btn-success" href="https://en.wikipedia.org/wiki/File_system" target="_blank">Wiki</a>
+            </div>
+          <br>
+            <div class="row">
+              <a class="btn btn-success" href="../File_System/single_level_directory.html">Single-Level Structured Directory</a>
+            </div>
+          </br>
+            <div class="row">
+              <a class="btn btn-success" href="../File_System/two_level_directory.html">Two-Level Structured Directory</a>
+            </div>
+          <br>
+            <div class="row">
+              <a class="btn btn-success" href="../File_System/tree_directory.html">Tree Structured Directory</a>
           </div>
         </font>
         </div>
     </section>
-    <footer></footer>
+
+    <style>
+      .btn {
+        background-color: transparent;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        transition: all 0.3s ease;
+      }
+    
+      .btn:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+        border-color: rgba(255, 255, 255, 0.5);
+      }
+    </style>
+    <!-- <footer></footer> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
