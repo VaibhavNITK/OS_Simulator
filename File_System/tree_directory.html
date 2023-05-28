@@ -1,55 +1,55 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>File Management Tree</title>
+        <title>Tree</title>
         <meta charset="utf-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/tree.css">
+        <link rel="stylesheet" type="text/css" href="css/single.css">
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
         <style>
-          /* Styling for the navbar */
-          .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background-color: transparent;
-            z-index: 9999;
+    /* Styling for the navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: transparent;
+      z-index: 9999;
+    }
+    
+    /* Styling for the navbar links */
+    .navbar a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 5px;
+      font-size: 18px;
+      border-radius: 5px;
+      border: 1px solid transparent;
+      transition: all 0.3s ease;
+    }
+    
+    /* Hover effect for navbar links */
+    .navbar a:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+    
+    /* Styling for the transparency box */
+    .transparency-box {
+      background-color: rgba(255, 255, 255, 0.5);
+      border: 4px solid #ffffff;
+      border-radius: 10px;
+      padding: 10px;
+      display: inline-block;
+    }
+          body {
+              color: white;
+              background-color: #a200e0;
+              background-image: url('image/bg.png');
+              background-size: cover;
+              background-position: center;
           }
-          
-          /* Styling for the navbar links */
-          .navbar a {
-            color: #ffffff;
-            text-decoration: none;
-            padding: 5px;
-            font-size: 18px;
-            border-radius: 5px;
-            border: 1px solid transparent;
-            transition: all 0.3s ease;
-          }
-          
-          /* Hover effect for navbar links */
-          .navbar a:hover {
-            background-color: rgba(255, 255, 255, 0.3);
-            border-color: rgba(255, 255, 255, 0.5);
-          }
-          
-          /* Styling for the transparency box */
-          .transparency-box {
-            background-color: rgba(255, 255, 255, 0.5);
-            border: 4px solid #ffffff;
-            border-radius: 10px;
-            padding: 10px;
-            display: inline-block;
-          }
-                body {
-                    color: white;
-                    background-color: #a200e0;
-                    background-image: url('images/bg.png');
-                    background-size: cover;
-                    background-position: center;
-                }
-            </style>
+      </style>
     </head>
     <body style="color:white; background-color: rgba(108, 108, 108, 1)">
       <nav class="navbar">
@@ -58,7 +58,8 @@
         <br>
         <br>
         <br>
-        <div align= "center"><p>Login as {userid}SPACE{password}.</br>Then type command_list and press ENTER to get list of available commands</p></div>
+        <div align= "center" style="font-family: 'Consolas'; color: #EEEEEE;"><p>Type <span style="color: rgb(22, 212, 51);">command_list</span> and press ENTER to get list of available commands</p></div>
+        <br>  
       <div class="container">
         <div id = 'divx'></div>
       </div>
