@@ -153,11 +153,11 @@ var res,pro;
 						var tab_alloc = document.getElementById("tab_need");
 						var row = tab_alloc.insertRow(j+3);
 						var cell = row.insertCell(0);
-						cell.innerHTML ="Number of Page_Falts:"+miss;
+						cell.innerHTML ="Number of Page Faults: "+miss;
 						var cell = row.insertCell(0);
-						cell.innerHTML ="Number of Page_Hits:"+hit;
+						cell.innerHTML ="Number of Page Hits: "+hit;
 						var cell = row.insertCell(0);
-						cell.innerHTML ="Hit ratio:"+hit+"/"+res;
+						cell.innerHTML ="Hit ratio: "+hit+"/"+res;
 
 					   }
 					   
