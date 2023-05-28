@@ -14,16 +14,19 @@ divx
 
 .textbox 
 { 
-    background: black; 
+    font-family: 'Consolas';
+    background: transparent; 
     height:25px; 
     width: 275px; 
     border: none; 
-    color: green; 
+    color: rgb(22, 212, 51); 
     outline: none; 
 }
 
 .container {
     width: 1140px;
     min-height: 600px;
-    background-color: black;
+    background-color: transparent;
+    backdrop-filter: blur(2px); /* Add blur effect */
+    border-radius: 10px; /* Add border radius for a rounded appearance */
 }

@@ -56,6 +56,7 @@ function signup()
  userin.setAttribute("class","textbox")
  userin.setAttribute("type","text")
  userin.setAttribute("onkeydown","signupresponse(event,userin.value)")      //Detect every key pressed from terminal and send to signupresponse() function
+ div.style.fontFamily = "Consolas";
  div.appendChild(label1)
  div.appendChild(br1)
  div.appendChild(label2)

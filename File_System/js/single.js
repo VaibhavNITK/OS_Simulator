@@ -39,6 +39,7 @@ function start()
  textbox.setAttribute("class","textbox")
  textbox.setAttribute("type","text")
  textbox.setAttribute("onkeydown","nextline(event,textbox.value)") //Detect every key pressed from terminal and send to nextline() function
+ div.style.fontFamily = "Consolas";
  div.appendChild(label)
  div.appendChild(textbox)
  div.appendChild(br)

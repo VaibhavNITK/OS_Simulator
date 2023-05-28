@@ -108,8 +108,8 @@ var res,pro;
 						if(isLRU==1)	cell.innerHTML = "<b>LEAST RECENTLY USED</b>";
 						if(isLRU==2)	cell.innerHTML = "<b>MOST RECENTLY USED</b>";
 						if(isLRU==3)	cell.innerHTML = "<b>OPTIMAL PAGE REPLACEMENT</b>";
-						if(isLRU==4)	cell.innerHTML = "<b>MOST FREQUENTLY USED</b>";
-						if(isLRU==5)	cell.innerHTML = "<b>SECOND CHANCE REPLACEMENT(CLOCK)</b>";
+						if(isLRU==4)	cell.innerHTML = "<b>MOST FREQNTLY USED</b>";
+						if(isLRU==5)	cell.innerHTML = "<b>Second Chance REPLACEMENT(CLOCK)</b>";
 					
 						
 					
