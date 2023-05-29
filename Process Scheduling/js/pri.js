@@ -427,6 +427,11 @@ function drawChart() {
     d1.setAttribute("style", "float:left;width:3px;");
     d1.textContent = gantt[i - 1].end;
     timer1.appendChild(d1);
+
+    var clearfix = document.createElement("div");
+    clearfix.setAttribute("style", "clear: both;");
+    gt.appendChild(clearfix);
+    timer1.appendChild(clearfix);
 }
 
 function drawTable() {

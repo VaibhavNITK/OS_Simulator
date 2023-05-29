@@ -53,6 +53,51 @@ function addToList() {
     document.getElementById("newbt").value = "";
 }
 
+function edit(id) {
+    var pos = parseInt(id.substr(3));
+    var button = document.getElementById(id);
+    button.innerHTML = "SAVE";
+    button.setAttribute("onclick", "save(" + pos + ")");
+    document.getElementById("at" + pos).removeAttribute("disabled");
+    document.getElementById("bt" + pos).removeAttribute("disabled");
+    document.getElementById("pri" + pos).removeAttribute("disabled");
+}
+
+function save(pos) {
+    at = parseInt(document.getElementById("at" + pos).value);
+    bt = parseInt(document.getElementById("bt" + pos).value);
+    pri = parseInt(document.getElementById("pri" + pos).value);
+    if (isNaN(parseInt(at)) && isNaN(parseInt(bt)) && isNaN(parseInt(pri))) {
+        window.alert("Please enter valid inputs");
+        return;
+    }
+    if (isNaN(parseInt(at))) {
+        window.alert("Please enter numeric value of arrival time");
+        return;
+    }
+    if (isNaN(parseInt(bt))) {
+        window.alert("Please enter numeric value of burst time");
+        return;
+    }
+    if (parseInt(at) < 0 && parseInt(bt) <= 0) {
+        window.alert("Invalid inputs");
+        return;
+    }
+    if (parseInt(at) < 0) {
+        window.alert("Please enter valid value of arrival time");
+        return;
+    }
+    if (parseInt(bt) <= 0) {
+        window.alert("Please enter positive value of burst time");
+        return;
+    }
+    
+    p[pos].at = at;
+    p[pos].bt = bt;
+    p[pos].pri = pri;
+    displayList();
+}
+
 function displayList() {
     var inp = document.getElementById("showinput");
     inp.innerHTML = "";
@@ -308,8 +353,14 @@ function drawChart() {
     }
     var d1 = document.createElement("div");
     d1.setAttribute("style", "float:left;width:3px;");
-    d1.textContent = gantt[i-1].end;
+    d1.textContent = gantt[i - 1].end;
     timer1.appendChild(d1);
+
+    var clearfix = document.createElement("div");
+    clearfix.setAttribute("style", "clear: both;");
+    gt.appendChild(clearfix);
+    timer1.appendChild(clearfix);
+    
 }
 
 function drawTable() {

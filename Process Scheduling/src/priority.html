@@ -7,10 +7,21 @@
     <script type="text/javascript" src="../js/pri.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="../css/index.css"></link>
+	<style>
+		/* Add this CSS code to increase the height of the Gantt chart dialog box */
+		#gantt {
+			height: 400px; /* Set the desired height for the Gantt chart */
+                overflow-x: hidden;
+                overflow-y: hidden;
+                display: flex;
+                flex-direction: row;
+             /* Add a vertical scrollbar if necessary */
+		}
+	</style>
 </head>
 
 <body >
-	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-info">
             <a class="navbar-brand" href="../../Index/index.html#pschedule">Go back</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
                 <span class="navbar-toggler-icon"></span>
@@ -19,7 +30,7 @@
     <br>
 	<div class="container">
 		<!-- Input section -->
-		<div class="jumbotron">
+		<div class="jumbotron" style="background-color:  rgb(76, 222, 222);;">
             <h1 class="display-3">Priority Scheduling</h1>
             <br>
 			<div id="showinput"></div>
@@ -38,7 +49,7 @@
 					<input class="form-control" id="newpri" name="priority" placeholder="Priority" type="text" size="35">
 				</div>
 			</div>
-            <button type="submit" id="add" class="btn btn-primary" style="margin-left: 36px" onclick="addToList()">Add</button>
+            <button type="submit" id="add" class="btn btn-dark" style="margin-left: 36px" onclick="addToList()">Add</button>
 			<br>
 			<div class="form-group" style="margin-left:36px; float:left;  width: 20%; height: 30px;">
 				<label class="control-label" for="inputDefault"></label>
@@ -48,8 +59,8 @@
 				</select>
 			</div>
 			<br>
-			<button type="submit" id="clear" class="btn btn-primary" style="margin-left: 36px; float: right;" onclick="clearData()">Clear Data</button>
-			<button type="submit" id="run" class="btn btn-primary" style="margin-left: 36px; float: right;" onclick="showOutput(2)">Schedule It!</button>
+			<button type="submit" id="clear" class="btn btn-dark" style="margin-left: 36px; float: right;" onclick="clearData()">Clear Data</button>
+			<button type="submit" id="run" class="btn btn-dark" style="margin-left: 36px; float: right;" onclick="showOutput(2)">Schedule It!</button>
 		</div>
 		<!-- Gantt Chart -->
 		<div style="margin-top: 150px;">
