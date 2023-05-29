@@ -7,11 +7,21 @@
     <script type="text/javascript" src="../js/index.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="../css/index.css"></link>
-
+	<style>
+		/* Add this CSS code to increase the height of the Gantt chart dialog box */
+		#gantt {
+			height: 400px; /* Set the desired height for the Gantt chart */
+                overflow-x: hidden;
+                overflow-y: hidden;
+                display: flex;
+                flex-direction: row;
+             /* Add a vertical scrollbar if necessary */
+		}
+	</style>
 </head>
 <body >
 <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
             <a class="navbar-brand" href="../../Index/index.html#pschedule">Go back</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
                 <span class="navbar-toggler-icon"></span>
@@ -19,7 +29,7 @@
         </nav>
 	<br>
 	<div class="container">
-		<div class="jobotron">
+		<div class="jumbotron" style="background-color:  rgb(76, 222, 222);;">
 			<h1 class="display-3">RR Scheduling</h1>
             <br>
 			<div id="showinput"></div>
@@ -34,21 +44,16 @@
 					<input class="form-control" id="newbt" name="bt" placeholder="Burst Time" type="text" size="35">
 				</div>
 			</div>
-            <button type="submit" id="add" class="btn btn-primary" style="margin-left: 36px" onclick="addToList()">Add</button>
+            <button type="submit" id="add" class="btn btn-dark" style="margin-left: 36px" onclick="addToList()">Add</button>
 			<br>
 			<div class="form-group" style="margin-left: 36px; float:left; width: 20%;">
 				<label class="col-form-label" for="inputDefault">Time Quantum: </label>
 				<input class="form-control" id = "tq" name="tq" placeholder="quantum" type="text" size="35">
 			</div>
-			<!--
-    <div style="width:800px;margin-left:20px;">
-        Time Quantum:
-        <input style="width:50px;margin-left:30px;" id="tq" type="text" value=""></input>
-    </div>
-    -->
+    
 			<div style="margin-top: 50px;">
-				<button type="submit" class="btn btn-primary" style="margin-left: 36px; float: right;" onclick="clearData()">Clear Data</button>
-				<button type="submit" class="btn btn-primary" style="margin-left: 36px; float: right;" onclick="showOutput(3)">Schedule It!</button>
+				<button type="submit" class="btn btn-dark" style="margin-left: 36px; float: right;" onclick="clearData()">Clear Data</button>
+				<button type="submit" class="btn btn-dark" style="margin-left: 36px; float: right;" onclick="showOutput(3)">Schedule It!</button>
 			</div>
 		</div>
 		<!-- Gantt Chart -->
