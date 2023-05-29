@@ -274,11 +274,15 @@ function vi(file)
    var br1 = document.createElement("br")
    var prompt = document.createTextNode("Press Ctrl to Save and Exit")
    contents = document.createElement('TextArea')         // Create/display textbox to edit/add content to the file
-   contents.setAttribute("rows","15")
+   contents.setAttribute("rows","3")
    contents.setAttribute("cols","120")
    index = i
    contents.setAttribute("onkeydown","savefile(event,contents.value,index,contents)") //Add attribute to DOM to send data on each key press
    contents.value = file_dir[i][6]                      // Contents of file are copied to the textbox
+   contents.style.backgroundColor = "transparent";
+   contents.style.border = "1px solid lightgray";
+   contents.style.color = '#FF5722';
+   contents.style.borderRadius = '5px';
    div.appendChild(prompt)
    div.appendChild(br)
    div.appendChild(contents)
