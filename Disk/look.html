@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="styles.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="disk.js"></script>
+        <script src="look.js"></script>
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
     </head>
 	<style>
@@ -96,18 +96,19 @@
                 <form>
                     <fieldset>
                         <div class="row">
-                            <!-- <div class="form-group" style="margin-left:350px; float:left;">
+                            <div class="form-group" style="margin-left:350px; float:left;">
 				<br>
                                 <label style="color:#e9f0ef;" for="exampleSelect1">Algorithm</label>
                                   <select style="background-color:#67e1cd" class="form-control" id="algorithm" onchange="admSelectCheck(this);">
+                                    <option style="color:#e9f0ef;" id="o5" value="look">LOOK</option>
                                     <option style="color:#e9f0ef;" id="o1" value="fcfs" >FCFS</option>
                                     <option style="color:#e9f0ef;" id="o2" value="sstf">SSTF</option>
                                     <option style="color:#e9f0ef;" id="o3" value="scan">SCAN</option>
                                     <option style="color:#e9f0ef;" id="o4" value="cscan">C-SCAN</option>
-                                    <option style="color:#e9f0ef;" id="o5" value="look">LOOK</option>
+                                    
                                     <option style="color:#e9f0ef;" id="o6" value="clook">C-LOOK</option>
                                   </select>
-                            </div> -->
+                            </div>
                             <div class="form-group" style="margin-left:180px; float:left;" id="admDivCheck">
 				<br>
                                 <label style="color:#e9f0ef;" for="exampleSelect1">Direction</label>
@@ -122,18 +123,18 @@
 			<br>
                             <div class="form-group" style="margin-left:150px; float:left;  width: 20%">
 				<br>
-                                <label style="color:#e9f0ef;" class="col-form-label" for="inputDefault">Sequence of cylinders</label>
+                                <label style="color:#e9f0ef;" class="col-form-label" for="inputDefault">Enter the input sequence </label>
                                 <input style="background-color:#67e1cd" class="form-control" id="bitstream-input" name="bitstream" placeholder="Space-separated sequence" type="text" size="35">
                             
                             </div>
                             <div class="form-group" style="margin-left:50px; float:left; width: 20%;">
 				<br>
-                                <label style="color:#e9f0ef;" class="col-form-label" for="inputDefault">Initial cylinder</label>
+                                <label style="color:#e9f0ef;" class="col-form-label" for="inputDefault">Initial position of R/W head</label>
                                 <input style="background-color:#67e1cd" class="form-control" id="initial-input" name="intial"  type="text" size="35">
                             </div>
                             <div class="form-group" style="margin-left:50px; float:left;  width: 20%">
 				<br>
-                                <label style="color:#e9f0ef;"class="col-form-label" for="inputDefault">Last cylinder</label>
+                                <label style="color:#e9f0ef;"class="col-form-label" for="inputDefault">Last position</label>
                                 <input style="background-color:#67e1cd" class="form-control" id="final-input" name="final"  type="text" size="35">
                             </div>
                         </div>
